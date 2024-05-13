@@ -54,7 +54,7 @@ We also collected a number of datasets using search terms. These search term dat
   
 <p>
 <p align="center">
-  <img width="593" img align="center" src="https://github.com/bensaldich/ddps_final/assets/71343656/85d55763-cce1-42f4-87f3-9fbe710aad57">
+  <img width="749" img align="center" src="https://github.com/bensaldich/ddps_final/assets/71343656/6804a132-fa78-478e-afb4-f0ac52651dc1">
 
 </p>
 
