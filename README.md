@@ -75,6 +75,14 @@ The tweet body column in our dataset was cleaned, performing lemmatization and r
 
 Because our goal was to measure the influence of followership on search results, we first needed a way to quantify the partisanship of the For You datasets. This cleaned data was scored using a scaled F-score from the scattertext library to measure the significance of terms in between two categories (for our purposes liberal and conservative). This scaled F-Score balances the competing interests of high recall and precision. By combining our Conservative and Liberal 'For You' Results into one dataframe, with a new column pertaining to what each tweet came from, we were able to create a partisanship corpus, with one and two-word terms and a ‘partisanship’ score measuring the degree to which that term appeared in the conservative tweets relative to the liberal tweets. This partisanship score is measured on a 0-1 scale, with terms more prevalent among the conservative tweets garnering a score of 1. This partisanship corpus provides a measure of the significance of certain terms used more prevalently by one political affiliation in relation to the other.
 
+<p>
+<p align="center">
+  <img width="900" alt="Screenshot 2024-05-14 at 12 43 04" src="https://github.com/bensaldich/ddps_final/assets/71343656/8a5067c1-48f3-4a03-91a0-132defb66a1c">
+
+  **Figure 1: Overview of Partisanship Corpus**
+
+</p>
+
 Once created, we applied those partisanship scores to the words contained in our various data. For each tweet of each search result dataframe, we created a dictionary containing all words in that tweet that appear in the ‘For You’ term list as keys and their respective partisanship scores as their values. Because scattertext identifies both one and two-word terms, two-word terms made up of one word terms will have two or even three corresponding scores. Take the example of ‘Joe Biden’, a two-word term with a score of XXX. This score indicates that conservatives tend to use the term ‘Joe Biden’ more than do liberals. However, both ‘Joe’ and ‘Biden’ are also included in the partisanship corpus, with two different scores, and as such, any tweet containing ‘Joe Biden’ will generate three scores, potentially distorting the results. To overcome this, we attempted to remove any one-word terms underlying two-word terms when a two-word term was present. This preserves the relative partisanship score of the underlying one-word terms, but utilizes the partisanship score of two-word terms when they appear in the text. 
 
 From this dictionary, we created columns for 1) the number of terms identified in the partisanship corpus, 2) the sum of the values corresponding to  the identified terms, and 3) the sum of those scores divided by the number of terms. This final column partisanship_score will be our approximation of the relative partisanship of a given tweet. 
