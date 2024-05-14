@@ -54,7 +54,7 @@ We also collected a number of datasets using search terms. These search term dat
   
 <p>
 <p align="center">
-  <img width="749" img align="center" src="https://github.com/bensaldich/ddps_final/assets/71343656/6804a132-fa78-478e-afb4-f0ac52651dc1">
+  <img width="588" alt="Screenshot 2024-05-14 at 11 15 27" src="https://github.com/bensaldich/ddps_final/assets/71343656/463053f3-1990-46a6-8475-49c13641f740">
 
 </p>
 
@@ -79,15 +79,17 @@ Before determining the potential influence of followership on search results, it
  Turning to the partisanship scores recorded in the search results, a few notable results stand out. The first is that, for all but one dataset, the average partisanship scores for each dataset is more conservative than liberal (Figure X). This indicates that the text contained within the tweets provided by the search results align more closely with terms found in the conservative ‘For You’ dataset than they do with the ‘Liberal’ dataset. This was the case for both the no one and everyone ‘For You’ datasets, as well as the Trump/Biden search results and the immigration search results. The one search result that displayed a marginal alignment with terms found in the liberal dataset was our Gaza OR Israel OR Palestine query, a topic that we assumed would generate more discussion among progressive circles. 
 
   </p>
-
-#### Figure 4: Dataset Partisanship (Relative to Partisanship Corpus 
  
  <p>
    
 <p align="center">
-  <img width="517" img align="center" src="https://github.com/bensaldich/ddps_final/assets/71343656/c4f5fdb6-88f9-42d9-bf3f-b79c0d24931d">
+  <img width="749" img align="center" src="https://github.com/bensaldich/ddps_final/assets/71343656/6804a132-fa78-478e-afb4-f0ac52651dc1">
 
 </p>
+  
+  **Figure 4: Partisanship of Datasets Relative to Partisanship Corpus**
+  
+  <p>
 
 Given that each search result dataset pertains to a particular topic (immigration, Trump/Biden, or Israel/Palestine), there is no way to separate the partisanship of the words used from the partisanship of the underlying topic. This makes the partisanship of our search results more disputable. But the ‘For You’ feeds do not display such inherent partisanship, and because of this, the slight conservative lean of both the ‘no one’ and ‘everyone’ For You datasets suggests that Twitter might suggest slightly conservative-aligned to a user with a “neutral” Twitter feed (be that a feed that follow an equal mix of liberal and conservative voices, or a truly empty Twitter profile). The extent to which this phenomenon is replicable beyond our data remains to be seen, and further research will be necessary to ascertain whether this conservative preference is due to an algorithmic preference for conservative content, or a preference for more highly engaged content that happens to be conservative. 
 
