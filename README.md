@@ -35,6 +35,13 @@ Lit Review here
 
 <a name="methods"></a>
 ## Methodology
+
+<p>
+  
+**Data Collection**
+
+  </p>
+
 <p>
 An initial seedlist of conservative and liberal influencers were identified using Audiense, a social intelligence platform that uses followership data to cluster Twitter accounts. We used two seedlists of conservative influencers and liberal influencers. We then extracted the 20K most engaged tweets from any of these users since 1/1/2024, and pivoted the extracted data on how many posts each authored and how many engagements their posts garnered. These two scores were normalized on a 0:1 scale within +/-3σ (any score above 3σ was matched to the highest index of 1). The follower lists of our Twitter accounts were comprised of the 100 highest scoring influencers from each list, with a highest total possible score of 2. Manual qualitative evaluation was performed to assess the political polarity of these influencers. As predicted, these individuals published highly political, highly partisan content. One influencer appeared in both lists, a comedian whose political stance is liberal but whose “anti woke” comedy garners support from conservatives. 
 
@@ -60,6 +67,12 @@ We also collected a number of datasets using search terms. These search term dat
 
 The tweet body column in our dataset was cleaned, performing lemmatization and removing stop words, URLs, and punctuation. For the search results dataframe pairs, a binary column was created, with a 1 corresponding to tweets that were included in the paired dataset, and a 0 corresponding to tweets that were unique to that search result. The degree of equivalency in our dataset pairs varied between (59.7% and 77.9%), demonstrating that a significant majority of the tweets appeared in both search results.
 
+<p>
+  
+**Partisanship Analysis**
+
+  </p>
+
 Because our goal was to measure the influence of followership on search results, we first needed a way to quantify the partisanship of the For You datasets. This cleaned data was scored using a scaled F-score from the scattertext library to measure the significance of terms in between two categories (for our purposes liberal and conservative). This scaled F-Score balances the competing interests of high recall and precision. By combining our Conservative and Liberal 'For You' Results into one dataframe, with a new column pertaining to what each tweet came from, we were able to create a partisanship corpus, with one and two-word terms and a ‘partisanship’ score measuring the degree to which that term appeared in the conservative tweets relative to the liberal tweets. This partisanship score is measured on a 0-1 scale, with terms more prevalent among the conservative tweets garnering a score of 1. This partisanship corpus provides a measure of the significance of certain terms used more prevalently by one political affiliation in relation to the other.
 
 Once created, we applied those partisanship scores to the words contained in our various data. For each tweet of each search result dataframe, we created a dictionary containing all words in that tweet that appear in the ‘For You’ term list as keys and their respective partisanship scores as their values. Because scattertext identifies both one and two-word terms, two-word terms made up of one word terms will have two or even three corresponding scores. Take the example of ‘Joe Biden’, a two-word term with a score of XXX. This score indicates that conservatives tend to use the term ‘Joe Biden’ more than do liberals. However, both ‘Joe’ and ‘Biden’ are also included in the partisanship corpus, with two different scores, and as such, any tweet containing ‘Joe Biden’ will generate three scores, potentially distorting the results. To overcome this, we attempted to remove any one-word terms underlying two-word terms when a two-word term was present. This preserves the relative partisanship score of the underlying one-word terms, but utilizes the partisanship score of two-word terms when they appear in the text. 
@@ -70,6 +83,27 @@ These columns were added to all datasets, including both the search results and 
 
 </p>
 
+<p>
+  
+**Topic Modeling**
+
+  </p>
+
+<p>
+  
+Topic Modelling was used in this project to identify how different were the topics that the Twitter feeds covered for the four profiles we had created. 
+
+In order for the analysis to generate genuine and sensible results, the tweet body column in our dataset was cleaned. Again, URLs from the tweet body columns in our datasets. We also removed the mentions from the tweet body because the mentions did not always allow us to understand the context in which they appeared in our results. Even though we see Biden and Trump emerging frequently in our results, it is possible to understand in context because there are a lot of supporting words that emerge along with them. This will be elaborated upon in the ‘Results’ section.
+
+We used BERTopic to perform the topic modeling using the ‘all-MiniLM-L6-v2’ sentience transformer. There was no specific reason for choosing this sentience transformer. We observed comparable results without a significant difference in our preliminary analyses on our datasets.
+
+We also used the Uniform Manifold Approximation Production (UMAP) technique so that we could have more flexibility regarding the number of nearest neighbors in the model to be considered, and modify the global and local structures accordingly. We set the n_neighbors = 20, n_components = 5 and the minimum distance or min_dist = 0.01. HDBSCAN clustering was used to be able to optimize the cluster size of our models. This was useful for us because we had targeted approximately 20 topics per datasets. We achieved that for the bigger datasets, but for the smaller ones, we had fewer topics. the least being 10 topics. The minimum cluster size was set to 20 and the min_samples = 4.
+
+We trained our topic model with BERTopic using UMAP, HDBSCAN and CountVectorizer for the English language. Using these tools we generated the Bar Chart which represented the Topic Word Scores for each of the topics generated for the concerned dataset. The Topic Word Scores that were generated through our analyses were analyzed in pairs. We chose to compare the pairs which were generated simultaneously. For instance, the conservative ‘For You’ Topic Word Score was compared with the liberal ‘For You’ Topic Word Score to identify the differences between them.
+
+  </p>
+
+
 <a name="results"></a>
 ## Results and Analysis
 <p>
@@ -77,7 +111,6 @@ These columns were added to all datasets, including both the search results and 
 Before determining the potential influence of followership on search results, it is first important to measure the uniqueness of search results. As Figures 1-3 demonstrate, Search results performed at the same time and in the same location produce relatively equivalent search results within the first few hundred results, but begin to decrease the further one scrolls in the results. In Figures XXX and YYY, the proportion of equivalent results diminishes over time before beginning to increase again later in the dataset. This can be explained by subsequent runs of the same search result, as the results are not infinite. 
 
  Turning to the partisanship scores recorded in the search results, a few notable results stand out. The first is that, for all but one dataset, the average partisanship scores for each dataset is more conservative than liberal (Figure X). This indicates that the text contained within the tweets provided by the search results align more closely with terms found in the conservative ‘For You’ dataset than they do with the ‘Liberal’ dataset. This was the case for both the no one and everyone ‘For You’ datasets, as well as the Trump/Biden search results and the immigration search results. The one search result that displayed a marginal alignment with terms found in the liberal dataset was our Gaza OR Israel OR Palestine query, a topic that we assumed would generate more discussion among progressive circles. 
-
   </p>
  
  <p>
@@ -94,10 +127,34 @@ Before determining the potential influence of followership on search results, it
 Given that each search result dataset pertains to a particular topic (immigration, Trump/Biden, or Israel/Palestine), there is no way to separate the partisanship of the words used from the partisanship of the underlying topic. This makes the partisanship of our search results more disputable. But the ‘For You’ feeds do not display such inherent partisanship, and because of this, the slight conservative lean of both the ‘no one’ and ‘everyone’ For You datasets suggests that Twitter might suggest slightly conservative-aligned to a user with a “neutral” Twitter feed (be that a feed that follow an equal mix of liberal and conservative voices, or a truly empty Twitter profile). The extent to which this phenomenon is replicable beyond our data remains to be seen, and further research will be necessary to ascertain whether this conservative preference is due to an algorithmic preference for conservative content, or a preference for more highly engaged content that happens to be conservative. 
 
 Comparing the breakdown of partisanship scores within the search result pairs, we can both see the similarities of these search results (verified by the proportion of equivalent tweets shared between the pairs), as well as the relatively normal but right-leaning distribution of partisanship, with the largest proportion of Tweets containing a partisanship score between 0.4–0.6. 
-
-Figure X depicts the distribution of scores based on the number of ID’d terms in each scores (following the removal of tweets containing fewer than 4 terms). It appears that the tweets coded as most liberal by and large have fewer ID'd terms.
-
   </p>
+
+ <p>
+   
+<p align="center">
+  <img width="250" alt="Part_dist_trump_biden" src="https://github.com/bensaldich/ddps_final/assets/71343656/6bd725c5-8d05-4a27-8bbf-91910ea25128" hspace="10">
+  <img width="250" alt="Part_dist_gaza" src="https://github.com/bensaldich/ddps_final/assets/71343656/3901ec76-1302-482b-ad94-4fdfcdd22f87" hspace="10">
+  <img width="250" alt="Part_dist_immigration" src="https://github.com/bensaldich/ddps_final/assets/71343656/bfcd9009-2456-4ff5-a1ec-9a196162ff49" hspace="10"><br>
+
+</p>
+  
+  **Figure 5-7: Volume of Tweets by Partisanship Distribution, Search Results**
+  
+  <p>
+
+Figure 8 depicts the distribution of scores based on the number of ID’d terms in each scores (following the removal of tweets containing fewer than 4 terms) for the Trump OR Biden search on our liberal account. It appears that the tweets coded as most liberal by and large have fewer ID'd terms.
+  </p>
+
+   <p>
+   
+<p align="center">
+  <img width="350" img align="center" alt="Number of ID'd Terms" src="https://github.com/bensaldich/ddps_final/assets/71343656/b07624cf-157d-4226-b8f7-42921fe15cba">
+
+</p>
+  
+  **Figure 8: Number of ID'd Terms by Partisanship Distribution**
+  
+  <p>
 
 <a name="discussions"></a>
 ## Discussion
