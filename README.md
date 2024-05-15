@@ -109,16 +109,17 @@ Tweets were captured using Zeeschuimer, a tool developed by the Digital Methods 
 - lib_fy (N = 11,444)
 - noone_fy (N = 2,692)
 - everyone_fy (N = 14,872)
-
+  </p>
+  
 <p>
-We also collected a number of datasets using search terms. These ‘search result’ datasets were collected in tandems: two computers were set up with the same VPN set to the same location (Phoenix, AZ) and searches were executed at the same exact time using the same Wi-Fi network. In this way, the influence of timing and location-based factors on search results were minimized. Given equipment-based limitations, only two ‘search results’ datasets could be recorded at a given time. The following sets of search terms were used:   </p>
+We also collected a number of datasets using search terms. These ‘search result’ datasets were collected in tandems: two computers were set up with the same VPN set to the same location (Phoenix, AZ) and searches were executed at the same exact time using the same Wi-Fi network. In this way, the influence of timing and location-based factors on search results were minimized. Given equipment-based limitations, only two ‘search results’ datasets could be recorded at a given time. The following sets of search terms were used:   
+  </p>
 
   
 <p>
 <p align="center">
   <img width="588" alt="Screenshot 2024-05-14 at 11 15 27" src="https://github.com/bensaldich/ddps_final/assets/71343656/463053f3-1990-46a6-8475-49c13641f740">
-
-</p>
+  </p>
 
 <p>
 The tweet’s body columns in our datasets were cleaned by performing lemmatization and removing stop words, URLs, and punctuation.
@@ -133,8 +134,9 @@ The tweet’s body columns in our datasets were cleaned by performing lemmatizat
 
   </p>
 
+<p>
 Before determining the potential influence of followership on search results, it is first important to measure the uniqueness of search results depending on the political orientation of the account. For each pair of ‘search term’ datasets (for example, con_trumpbiden and lib_trumpbiden form a pair), a binary column was created, equal to 1 if the tweet is included in the paired dataset, and 0 if the tweet is absent from the paired dataset. The degree of equivalence in the three liberal/conservative (each associated to a search query) varies between 59.7% and 77.9%, demonstrating that a significant majority of tweets appear in both datasets for a given query.
-
+  </p>
 
 <p align="center">
   <img width="700" alt="Screenshot 2024-05-15 at 18 59 32" src="https://github.com/bensaldich/ddps_final/assets/71343656/c0320741-e10c-4e2b-86cc-640981c0a0ee">
@@ -144,7 +146,8 @@ Before determining the potential influence of followership on search results, it
 
 <p>
 To get a more precise overview of the degree of similarity between search results, we plot the evolution of the percentage of identical tweets within a pair as the user scrolls down the tweets suggested by the algorithm. Figures 1 to 4 confirm that search results performed at the same time and in the same location (which constitute our pairs of datasets as defined above) produce relatively equivalent search results. More specifically, they all tend to suggest that the percentage is the highest within the first few hundred results, but then begin to decrease the further one scrolls in the results. In Figure 2, the proportion of equivalent results diminishes over time before beginning to increase again later in the dataset. This can, at least partially, be explained by the fact that several runs of the same search query are often necessary to collect more tweets, because the number of results is not infinite: at some point, no more tweets load and it is necessary to restart the search to gather more tweets. Lastly, it is interesting to note that the ‘immigration’ query provides results which are largely identical for both neutral accounts (the one following all influencers, and the one following no one).
-
+  </p>
+  
 **Partisanship Analysis: Methodology**
 
 <p>
