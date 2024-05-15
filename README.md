@@ -23,7 +23,9 @@
 <a name="intro"></a>
 ## Introduction
 <p>
+  
 In the first decade of the twenty-first century, social media was expected bring communities together. The internet had already enabled instant written communication between people living at opposite ends of the world, but social media now allowed people to participate in simultaneous social interactions within a wider community. A number of platforms offering such networks rapidly rose to prominence around this time, but very few of them garnered as much salience as Twitter.
+  
   </p>
 
 <p>
