@@ -263,8 +263,7 @@ Other limitations concern our attempts to measure partisanship. While the scaled
   
 <p>
 This study, like others being conducted on Twitter, is also constrained by the dynamic nature of the platform. Given the company’s propensity for product change (particularly following Elon Musk’s acquisition), these results might not be relevant in a future iteration of the search results algorithm. This is worsened by the opacity of Twitter and of its algorithms, which despite Musk’s promises to bring more transparency, has increased in his era (Flam, 2023). And, although Twitter published in 2023 a snapshot of its recommendation algorithm, there is no guarantee that this is the code actually used by the company (Nicholas, 2023), since the published code is not connected to the one running on Twitter’s servers.
-
-</p>
+  </p>
 
 
 <a name="conclusions"></a>
