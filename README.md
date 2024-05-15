@@ -77,7 +77,6 @@ On the other hand, many Republicans believe that they are being censored by the 
   
 <p>
 Like many aforementioned studies, we also set our focus on the United States because this country provides an interesting case study to assess the political stance of Twitter search results. Indeed, it displays a significant level of political and ideological polarization, which keeps increasing (Perry, 2022). Americans are now greatly divided between conservatives and liberals with regard to topics such as inequality, gun control or immigration (Bail et al., 2018). Boxell et al. (2022) compare 12 OECD countries with regards to the evolution of affective polarization, which is about the tendency for partisans to dislike and distrust those from other parties (Druckman et al., 2020), and find that the United States has experienced the largest increase in polarization over the last four decades. Also considering a set of 12 Western democracies, Fletcher et al. (2020) argue that news audiences are the most polarized in the US. 
-
   </p>
 
 <a name="data"></a>
@@ -157,12 +156,16 @@ Because our goal was to measure the influence of followership on search results,
 
 </p>
 
-
+<p>
 Once created, we applied those partisanship scores to the words contained in the ‘search terms’ datasets. For each tweet of each ‘search result’ data frame, we created a dictionary containing all words in that tweet that appear in the ‘For You’ term list as keys and their respective partisanship scores as their values. Because Scattertext identifies both one and two-word terms, two-word terms made up of one-word terms will have two or even three corresponding scores. Take the example of ‘joe biden’, a two-word term with a score of 0.923. This score indicates that conservatives tend to use the term ‘joe biden’ more than do liberals. However, both ‘joe’ and ‘biden’ are also included in the partisanship corpus, with two different scores, and as such, any tweet containing ‘Joe Biden’ will generate three scores, potentially distorting the results. To overcome this, we removed any one-word terms underlying two-word terms when a two-word term was present, preserving the relative partisanship score of the underlying one-word terms while prioritizing the partisanship score of two-word terms when they appear in the text.
 From this dictionary, we created columns for 1) the number of terms identified in the partisanship corpus, 2) the sum of the values corresponding to  the identified terms, and 3) the sum of those scores divided by the number of terms. This final column partisanship_score will be our approximation of the relative partisanship of a given tweet. 
-
+  </p>
+  
+<p>
 From this dictionary, we created columns for 1) the number of terms identified in the partisanship corpus, 2) the sum of the values corresponding to the identified terms, and 3) the sum of those scores divided by the number of terms. This final column partisanship_score will be our approximation of the relative partisanship of a given tweet. 
-
+  </p>
+  
+<p>
 These columns were added to all datasets, including both the search results and the ‘For You’ datasets. We then performed additional data cleaning, removing tweets containing fewer than four identified terms to ensure that we were only scoring tweets with enough relevant data to derive a partisanship score.
 
 </p>
@@ -171,8 +174,10 @@ These columns were added to all datasets, including both the search results and 
 
 **Partisanship Analysis: Results**
 
+<p>
 When considering the partisanship scores recorded in the search results, a few notable results stand out. The first is that, for all but one dataset pair (the search result for Gaza, Palestine, or Israel), the average partisanship score is more conservative than liberal (Figure 6). This indicates that the text contained within the tweets provided by the search results align more closely with terms found in the conservative ‘For You’ dataset than they do with the ‘Liberal’ dataset. This was the case for both the ‘no one’ and ‘everyone’ ‘For You’ datasets, as well as the two datasets for the Trump/Biden query and the datasets for the immigration query. The one search result that displayed a neutral dataset was our ‘Gaza OR Israel OR Palestine’ query, a topic that we assumed would generate more discussion among progressive circles, but was found to have equal partisanship.
-
+  </p>
+  
  <p>
    
 <p align="center">
@@ -184,9 +189,10 @@ When considering the partisanship scores recorded in the search results, a few n
   Figure 6: Partisanship of Datasets Relative to Partisanship Corpus
 </p>
   
-
+<p>
 The second was that, contrary to our hypothesis, search results did not appear to be influenced in any way by one’s followers. Tables 1-3 display, for each search result pair, the partisanship of the tweets found in both accounts, compared to the partisanship of the tweest found in only the liberal or conservative accounts. As demonstrated, there is very little difference between the partisanship of these groups, and no directional movement towards the partisan affiliation of a given account’s follows. 
-
+  </p>
+  
  <p>
    
 <p align="center">
@@ -194,10 +200,14 @@ The second was that, contrary to our hypothesis, search results did not appear t
 
 </p>
 
+<p>
 Given that each ‘search result’ dataset pertains to a particular topic (immigration, Trump/Biden, or Israel/Palestine), there is no way to separate the partisanship of the words used from the partisanship of the underlying topic. This makes the partisanship of our search results more disputable. But the ‘For You’ feeds of the two neutral accounts do not display such inherent partisanship, and because of this, the slight conservative lean of both the ‘no one’ and ‘everyone’ ‘For You’ datasets suggests that Twitter might suggest slightly conservative-aligned content to a user with a 'neutral' Twitter feed (be that a feed that follow an equal mix of liberal and conservative voices, or a truly empty Twitter profile). The extent to which this phenomenon is replicable beyond our data remains to be seen, and further research will be necessary to ascertain whether this conservative preference is due to an algorithmic preference for conservative content, or a preference for more highly engaged content that happens to be conservative. 
-
+  </p>
+  
+<p>
 Comparing the breakdown of partisanship scores within the search result pairs (Figures 7-9), we can both see the similarities of these search results (verified by the proportion of equivalent tweets shared between the pairs), as well as the relatively normal but right-leaning distribution of partisanship, with the largest proportion of tweets containing a partisanship score between 0.4–0.6.
-
+  </p>
+  
  <p>
    
 <p align="center">
@@ -210,8 +220,9 @@ Comparing the breakdown of partisanship scores within the search result pairs (F
 </p>
 
 
-
-Figure 10 depicts the number of identified  terms as a function of the partisanship score (following the removal of tweets containing fewer than 4 terms). It appears that the tweets coded as most liberal by and large have fewer identified  terms.
+<p>
+Figure 10 depicts the number of identified  terms as a function of the partisanship score (following the removal of tweets containing fewer than 4 terms). It appears that the tweets coded as most liberal by and large have fewer identified  terms.  
+  </p>
 
    <p>
    
