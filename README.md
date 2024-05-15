@@ -235,7 +235,7 @@ Figure 10 depicts the number of identified  terms as a function of the partisans
 
 <p>
 <p align="center">
-  <img width="590" alt="Screenshot 2024-05-15 at 23 26 15" src="https://github.com/bensaldich/ddps_final/assets/71343656/0cce2272-9617-4040-a6e4-ffea0eee3835">
+  <img width="400" alt="Screenshot 2024-05-15 at 23 26 15" src="https://github.com/bensaldich/ddps_final/assets/71343656/0cce2272-9617-4040-a6e4-ffea0eee3835">
 <p align="center">
   Figure 11: Topic title here
   </p>
