@@ -171,9 +171,9 @@ These columns were added to all datasets, including both the search results and 
 </p>
 
 <p>
-
 **Partisanship Analysis: Results**
-
+  </p>
+  
 <p>
 When considering the partisanship scores recorded in the search results, a few notable results stand out. The first is that, for all but one dataset pair (the search result for Gaza, Palestine, or Israel), the average partisanship score is more conservative than liberal (Figure 6). This indicates that the text contained within the tweets provided by the search results align more closely with terms found in the conservative ‘For You’ dataset than they do with the ‘Liberal’ dataset. This was the case for both the ‘no one’ and ‘everyone’ ‘For You’ datasets, as well as the two datasets for the Trump/Biden query and the datasets for the immigration query. The one search result that displayed a neutral dataset was our ‘Gaza OR Israel OR Palestine’ query, a topic that we assumed would generate more discussion among progressive circles, but was found to have equal partisanship.
   </p>
@@ -255,9 +255,13 @@ Figure 10 depicts the number of identified  terms as a function of the partisans
 ## Limitations
 <p>
 There are several notable limitations that diminish the external validity of our findings. The first concerns our data collection practices. Though we collected numerous tweets for each corpus, collecting a total of 54,975 tweets across For You and search result datasets, much of the data collection occurred over a short period of time (1-2 days), making it impossible to rule out the influence of larger narratives driving the partisanship of discussion on Twitter during data collection. Further iterations of data collection and analysis would need to be conducted to diminish the influence of any one event or story on partisanship. Notably, it would be interesting to conduct a similar study with other queries than the ones considered here.
-
+  </p>
+  
+<p>
 Other limitations concern our attempts to measure partisanship. While the scaled F-Score appears to be a good indication of term relevance in one category of text relative to another, it may have less potency on an individual tweet level. Partisanship is difficult to gauge in any form, but relying on the existence of individual terms to derive tweet-level partisanship is not perfectly accurate. In particular, our approach using Scattertext implies that sentences are considered as 'bags of words' put next to each other (Kessler, 2017) - with single words and bigrams. This enables an extensive analysis of our data, but also implies a number of hindrances (Murel and Kavlakoglu, 2024; Engati, 2024). Notably, since it only considers the frequency of occurrence, the context and word order, which can greatly affect the meaning of a sentence, are ignored.
-
+  </p>
+  
+<p>
 This study, like others being conducted on Twitter, is also constrained by the dynamic nature of the platform. Given the company’s propensity for product change (particularly following Elon Musk’s acquisition), these results might not be relevant in a future iteration of the search results algorithm. This is worsened by the opacity of Twitter and of its algorithms, which despite Musk’s promises to bring more transparency, has increased in his era (Flam, 2023). And, although Twitter published in 2023 a snapshot of its recommendation algorithm, there is no guarantee that this is the code actually used by the company (Nicholas, 2023), since the published code is not connected to the one running on Twitter’s servers.
 
 </p>
