@@ -159,7 +159,7 @@ The second was that, contrary to our hypothesis, search results did not appear t
  <p>
    
 <p align="center">
-  <img width="866" alt="Screenshot 2024-05-15 at 19 13 55" src="https://github.com/bensaldich/ddps_final/assets/71343656/5ab6dfff-f4aa-46c0-95d6-2f038df31988">
+  <img width="845" alt="Screenshot 2024-05-15 at 19 49 16" src="https://github.com/bensaldich/ddps_final/assets/71343656/f534f755-ff8a-4f48-8ca1-720f176a505c">
 
 </p>
 
