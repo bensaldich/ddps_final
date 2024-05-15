@@ -94,11 +94,17 @@ Like many aforementioned studies, we also set our focus on the United States bec
 
 <p>
 Our first step consisted in crafting an initial seedlist list of conservative and liberal influencers via Audiense, a social intelligence platform that uses followership data to cluster Twitter accounts. Considering two seed lists of conservative and liberal influencers, we extracted the 20,000 most engaged tweets posted in 2024 by any of these users. We then ranked these influencers along two dimensions: their number of tweets and the total amount of engagement garnered by their posts. These two scores were normalized on a [0:1] scale within three standard deviations from the mean, allowing us to clip outliers within our dataset by assigning them a maximum index of 1. We built our follower lists of conservative and liberal influencers by keeping the 100 highest-scoring influencers from each list. Manual qualitative evaluation was performed to assess the political polarity of these influencers. As predicted, these individuals published highly political, highly partisan content. One influencer appeared in both lists, a comedian whose political stance is liberal but whose 'anti-woke' comedy garners support from conservatives.
-
+  </p>
+  
+<p>
 We then created four Twitter accounts, a conservative account (following all 100 conservative influencers), a liberal account (following all 100 liberal influencers), an account following all 199 partisan influencers (known as the 'everyone' account), and an account following no one (the 'no one' account). Before creating each account, a VPN was turned on and set to Phoenix, AZ, USA. To minimize the effect of cookies on results, each Twitter account was created using a new email account and using a “developer” browser (a web browser that provides a blank slate). In order to emulate a truly neutral profile, we selected all interest areas. Twitter requires you to follow at least 1 account, so for the ‘no one’ account, the local police dispatch Twitter account in Phoenix AZ was followed and unfollowed immediately after account creation. 
+  </p>
 
+<p>
 Tweets were captured using Zeeschuimer, a tool developed by the Digital Methods Initiative at the University of Amsterdam (Digital Methods Initiative, 2024). Zeeschuimer allows an individual to capture data natively as they use social media. Once accounts were created, data was collected on the ‘For You’ feeds of each profile (which combine content made by the accounts followed and other content suggested by the algorithm) to obtain, with N being the number of tweets: 
+  </p>
 
+<p>
 - con_fy (N = 10,888)
 - lib_fy (N = 11,444)
 - noone_fy (N = 2,692)
@@ -114,7 +120,9 @@ We also collected a number of datasets using search terms. These ‘search resul
 
 </p>
 
+<p>
 The tweet’s body columns in our datasets were cleaned by performing lemmatization and removing stop words, URLs, and punctuation.
+  </p>
 
 <a name="analyses"></a>
 ## Methodology & Analyses
