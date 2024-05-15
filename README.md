@@ -51,27 +51,37 @@ What is less clearly understood is the impact of who one follows on one’s Twit
   - Regarding RQ2, we hypothesize that partisanship of search results will skew more conservatively.
   </p>
 
-</p>
-
 
 <a name="litrev"></a>
 ## Literature Review
 <p>
 This study falls within the broader issue of the societal effects of social media algorithms, a particularly important topic given the influence of algorithms on the lives of billions. Algorithms have the capacity to induce significant, and potentially deleterious, effects at a systemic level (Lazer et al., 2023, Illing, 2018). For example, some argue that Facebook played an important role in the genocide against the Rohingya in Myanmar, in which the prioritization of engagement may have contributed to hate speech dissemination (Mozur, 2018; Lazer et al., 2023).
+  </p>
 
+<p>
 More specifically, although the nature of the effects identified vary, a vast literature supports the claim that users’ political views can be influenced by the content recommended by curation algorithms. Epstein and Robertson (2015) show that the ranking of search results can shift the voting preferences of undecided voters by 20% or more, a phenomenon they call the search engine manipulation effect. Notably, our study relates to a large corpora of academic research focusing on Twitter, a favored platform among academic research given the company’s generosity with user data (at least prior to Musk’s acquisition) and its widespread use among political and media ecosystems. Indeed, compared to other platforms, Twitter is often described as a privileged destination for news, in particular those related to politics (Robertson, 2023b). 
+  </p>
 
+<p>
 Through a study of American users of Twitter, Bail et al. (2018) argue that when exposed to opposed political ideas, users (particularly Republican users) may shift towards ideological extremes. Also focusing on the United States, Jiang et al. (2021) identify echo chambers effects, particularly among right-leaning communities. This means that, at least in certain cases, users tend to be more often exposed to opinions which are similar to theirs - which can strengthen their preexisting political opinions (Alfano et al., 2021). Though the effects of these phenomena are still debated and studied, it is clear that social media can inform and indeed shape users’ political worldviews. 
+  </p>
 
+<p>
 All in all, these results raise crucial questions regarding democracies and the functioning of their institutions. The fact that social media can impact citizens’ voting preferences highlights the need to better understand the political stance of the content promoted by curation algorithms, and to what extent it can vary depending on individuals’ profile and use of the platform. These are the questions around which our study revolves. 
+  </p>
 
+<p>
 While there has been little academic focus on Twitter’s search functionality, a recent experiment led by journalists from the Austrian newspaper Der Standard (2024) sought to understand the partisanship of the platform’s search results. Despite its important limitations, this article’s aim and methodology share some similarities with ours. Using a new email address, they created a Twitter account to try to build a setting that is as neutral as possible and get results that are not influenced by previous activity of the account. On three consecutive days, they collected the first 20 tweets from the 'Top' section of the results for four search queries ('Ukraine', 'Russia', 'Biden' and 'Trump'). Each tweet was then classified as 'Positive', 'Neutral' or 'Negative' with respect to the search query in question. 'Positive' tweets were those that support the goals and narratives of the country or politician For instance, for the 'Ukraine' query, this includes tweets which support providing the country with more weapons. On the contrary, 'Negative' tweets are those criticizing the country or politician. Lastly, tweets that are unrelated to the search term, or that do not clearly endorse a side are characterized as 'Neutral' - this includes a number of media reports. They find that the search results appear to be tilted in favor of conservatives’ positions: the tweets are significantly more positive when they relate to Trump or Russia. 67% of tweets for the 'Trump' query are positive, against only 8% for the 'Biden' query. Similarly, 'Russia' delivers 72% positive tweets against only 35% for 'Ukraine'. As mentioned above, several limitations, highlighted by the authors, weakened the scientific validity of the experiment. In particular, the samples are extremely small and the definitions of three categories are not very precise. Nonetheless, the results of this 'short experiment', as described by its authors, support the results of a Twitter-led study (Huszár et al., 2021) made before Elon Musk bought the platform. Considering the accounts of elected officials, Huszár and his colleagues assess to what extent the tweets are amplified by the platform’s algorithm. They found that, in six out of the seven countries considered (among which the United States), tweets of right-wing accounts are favored by the algorithm.
+  </p>
 
+<p>
 On the other hand, many Republicans believe that they are being censored by the platform. A 2020 poll reveals that 69% of Republican respondents believe that Twitter and other major tech companies favor liberals over conservatives, against 25% of Democrat pollees (Vogels et al., 2020). One of the reasons brought forward by Musk to motivate his purchase of Twitter was that, in his view, conservatives’ views were being censored by the platform (Barrett, 2022). The claim that platforms are biased against conservatives is now frequently used in the rhetoric of Republican politicians (Mosleh et al., 2024). However, Barrett and Sims (2021) conclude that no reliable large-scale study identified such bias directed against conservative content. Although Mosleh et al. (2024) find that Twitter’s right-wing users are more likely to be suspended, they demonstrate that it is linked to the fact that conservative users have a far higher probability of being bots, and that they share significantly more links to low-quality news sites, potentially related to misinformation.
-
+  </p>
+  
+<p>
 Like many aforementioned studies, we also set our focus on the United States because this country provides an interesting case study to assess the political stance of Twitter search results. Indeed, it displays a significant level of political and ideological polarization, which keeps increasing (Perry, 2022). Americans are now greatly divided between conservatives and liberals with regard to topics such as inequality, gun control or immigration (Bail et al., 2018). Boxell et al. (2022) compare 12 OECD countries with regards to the evolution of affective polarization, which is about the tendency for partisans to dislike and distrust those from other parties (Druckman et al., 2020), and find that the United States has experienced the largest increase in polarization over the last four decades. Also considering a set of 12 Western democracies, Fletcher et al. (2020) argue that news audiences are the most polarized in the US. 
 
-</p>
+  </p>
 
 <a name="data"></a>
 ## Data
