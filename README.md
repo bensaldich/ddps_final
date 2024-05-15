@@ -154,7 +154,7 @@ When considering the partisanship scores recorded in the search results, a few n
 </p>
   
 
-The second was that, contrary to our hypothesis, search results did not appear to be influenced in any way by one’s followers. Tables 2-4 display, for each search result pair, the partisanship of the tweets found in both accounts, compared to the partisanship of the tweest found in only the liberal or conservative accounts. As demonstrated, there is very little difference between the partisanship of these groups, and no directional movement towards the partisan affiliation of a given account’s follows. 
+The second was that, contrary to our hypothesis, search results did not appear to be influenced in any way by one’s followers. Tables 1-3 display, for each search result pair, the partisanship of the tweets found in both accounts, compared to the partisanship of the tweest found in only the liberal or conservative accounts. As demonstrated, there is very little difference between the partisanship of these groups, and no directional movement towards the partisan affiliation of a given account’s follows. 
 
  <p>
    
