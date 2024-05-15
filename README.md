@@ -116,7 +116,7 @@ The tweet’s body columns in our datasets were cleaned by performing lemmatizat
 
 <a name="analyses"></a>
 ## Methodology & Analyses
-
+<p>
 
 <h4>Degree of Similarity of Search Results</h4>
 
