@@ -165,9 +165,22 @@ The second was that, contrary to our hypothesis, search results did not appear t
 
 Given that each ‘search result’ dataset pertains to a particular topic (immigration, Trump/Biden, or Israel/Palestine), there is no way to separate the partisanship of the words used from the partisanship of the underlying topic. This makes the partisanship of our search results more disputable. But the ‘For You’ feeds of the two neutral accounts do not display such inherent partisanship, and because of this, the slight conservative lean of both the ‘no one’ and ‘everyone’ ‘For You’ datasets suggests that Twitter might suggest slightly conservative-aligned content to a user with a 'neutral' Twitter feed (be that a feed that follow an equal mix of liberal and conservative voices, or a truly empty Twitter profile). The extent to which this phenomenon is replicable beyond our data remains to be seen, and further research will be necessary to ascertain whether this conservative preference is due to an algorithmic preference for conservative content, or a preference for more highly engaged content that happens to be conservative. 
 
-Comparing the breakdown of partisanship scores within the search result pairs, we can both see the similarities of these search results (verified by the proportion of equivalent tweets shared between the pairs), as well as the relatively normal but right-leaning distribution of partisanship, with the largest proportion of tweets containing a partisanship score between 0.4–0.6.
+Comparing the breakdown of partisanship scores within the search result pairs (Figures 7-9), we can both see the similarities of these search results (verified by the proportion of equivalent tweets shared between the pairs), as well as the relatively normal but right-leaning distribution of partisanship, with the largest proportion of tweets containing a partisanship score between 0.4–0.6.
 
-Figure 7 depicts the number of identified  terms as a function of the partisanship score (following the removal of tweets containing fewer than 4 terms). It appears that the tweets coded as most liberal by and large have fewer identified  terms.
+ <p>
+   
+<p align="center">
+  <img width="250" alt="Part_dist_trump_biden" src="https://github.com/bensaldich/ddps_final/assets/71343656/6bd725c5-8d05-4a27-8bbf-91910ea25128" hspace="10">
+  <img width="250" alt="Part_dist_gaza" src="https://github.com/bensaldich/ddps_final/assets/71343656/3901ec76-1302-482b-ad94-4fdfcdd22f87" hspace="10">
+  <img width="250" alt="Part_dist_immigration" src="https://github.com/bensaldich/ddps_final/assets/71343656/bfcd9009-2456-4ff5-a1ec-9a196162ff49" hspace="10"><br>
+
+<p align="center">
+  Figure 7-9: Volume of Tweets by Partisanship Distribution, Search Results
+</p>
+
+
+
+Figure 10 depicts the number of identified  terms as a function of the partisanship score (following the removal of tweets containing fewer than 4 terms). It appears that the tweets coded as most liberal by and large have fewer identified  terms.
 
    <p>
    
@@ -175,7 +188,7 @@ Figure 7 depicts the number of identified  terms as a function of the partisansh
   <img width="350" img align="center" alt="Number of ID'd Terms" src="https://github.com/bensaldich/ddps_final/assets/71343656/b07624cf-157d-4226-b8f7-42921fe15cba">
 
 <p align="center">
-  Figure 7: Number of ID'd Terms by Partisanship Distribution
+  Figure 10: Number of ID'd Terms by Partisanship Distribution
 </p>
 
 
@@ -195,59 +208,6 @@ Figure 7 depicts the number of identified  terms as a function of the partisansh
 
 
   </p>
-
-
-<a name="results"></a>
-## Results and Analysis
-<p>
-  
-Before determining the potential influence of followership on search results, it is first important to measure the uniqueness of search results. As Figures 1-3 demonstrate, Search results performed at the same time and in the same location produce relatively equivalent search results within the first few hundred results, but begin to decrease the further one scrolls in the results. In Figures XXX and YYY, the proportion of equivalent results diminishes over time before beginning to increase again later in the dataset. This can be explained by subsequent runs of the same search result, as the results are not infinite. 
-
- Turning to the partisanship scores recorded in the search results, a few notable results stand out. The first is that, for all but one dataset, the average partisanship scores for each dataset is more conservative than liberal (Figure X). This indicates that the text contained within the tweets provided by the search results align more closely with terms found in the conservative ‘For You’ dataset than they do with the ‘Liberal’ dataset. This was the case for both the no one and everyone ‘For You’ datasets, as well as the Trump/Biden search results and the immigration search results. The one search result that displayed a marginal alignment with terms found in the liberal dataset was our Gaza OR Israel OR Palestine query, a topic that we assumed would generate more discussion among progressive circles. 
-  </p>
- 
- <p>
-   
-<p align="center">
-  <img width="749" img align="center" src="https://github.com/bensaldich/ddps_final/assets/71343656/6804a132-fa78-478e-afb4-f0ac52651dc1">
-
-</p>
-  
-  **Figure 4: Partisanship of Datasets Relative to Partisanship Corpus**
-  
-  <p>
-
-Given that each search result dataset pertains to a particular topic (immigration, Trump/Biden, or Israel/Palestine), there is no way to separate the partisanship of the words used from the partisanship of the underlying topic. This makes the partisanship of our search results more disputable. But the ‘For You’ feeds do not display such inherent partisanship, and because of this, the slight conservative lean of both the ‘no one’ and ‘everyone’ For You datasets suggests that Twitter might suggest slightly conservative-aligned to a user with a “neutral” Twitter feed (be that a feed that follow an equal mix of liberal and conservative voices, or a truly empty Twitter profile). The extent to which this phenomenon is replicable beyond our data remains to be seen, and further research will be necessary to ascertain whether this conservative preference is due to an algorithmic preference for conservative content, or a preference for more highly engaged content that happens to be conservative. 
-
-Comparing the breakdown of partisanship scores within the search result pairs, we can both see the similarities of these search results (verified by the proportion of equivalent tweets shared between the pairs), as well as the relatively normal but right-leaning distribution of partisanship, with the largest proportion of Tweets containing a partisanship score between 0.4–0.6. 
-  </p>
-
- <p>
-   
-<p align="center">
-  <img width="250" alt="Part_dist_trump_biden" src="https://github.com/bensaldich/ddps_final/assets/71343656/6bd725c5-8d05-4a27-8bbf-91910ea25128" hspace="10">
-  <img width="250" alt="Part_dist_gaza" src="https://github.com/bensaldich/ddps_final/assets/71343656/3901ec76-1302-482b-ad94-4fdfcdd22f87" hspace="10">
-  <img width="250" alt="Part_dist_immigration" src="https://github.com/bensaldich/ddps_final/assets/71343656/bfcd9009-2456-4ff5-a1ec-9a196162ff49" hspace="10"><br>
-
-</p>
-  
-  **Figure 5-7: Volume of Tweets by Partisanship Distribution, Search Results**
-  
-  <p>
-
-Figure 8 depicts the distribution of scores based on the number of ID’d terms in each scores (following the removal of tweets containing fewer than 4 terms) for the Trump OR Biden search on our liberal account. It appears that the tweets coded as most liberal by and large have fewer ID'd terms.
-  </p>
-
-   <p>
-   
-<p align="center">
-  <img width="350" img align="center" alt="Number of ID'd Terms" src="https://github.com/bensaldich/ddps_final/assets/71343656/b07624cf-157d-4226-b8f7-42921fe15cba">
-
-</p>
-  
-  **Figure 8: Number of ID'd Terms by Partisanship Distribution**
-  
-  <p>
 
 <a name="limitations"></a>
 ## Limitations
@@ -274,4 +234,3 @@ Conclusion here
 
  references here
 </p>
-
