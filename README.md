@@ -24,19 +24,30 @@
 ## Introduction
 <p>
 In the first decade of the twenty-first century, social media was expected bring communities together. The internet had already enabled instant written communication between people living at opposite ends of the world, but social media now allowed people to participate in simultaneous social interactions within a wider community. A number of platforms offering such networks rapidly rose to prominence around this time, but very few of them garnered as much salience as Twitter.
+  </p>
 
+<p>
 Twitter is often referred to as a ‘digital town square’, a platform where anyone can freely express themselves to anyone else willing to engage (Yeung, 2023). By enabling individuals to express their opinions and ideas to the world using 140 (later 280) characters or less, Twitter found success as an accessible platform; its short form nature encouraged engagement, and any tweet could theoretically be seen and engaged with by any other Twitter user, irrespective of their real world communities. Twitter allowed people to instantly learn about events taking place across the world, making it a particularly useful platform in event coverage and media.
+  </p>
 
+<p>
 However, as social media platforms have evolved over time, research has posited that some networks favored emotionally charged content. Negative content was found to excite more emotional engagement when compared to positive and neutral content, eventually leading to offensive, polarizing, or simply false pieces of information being optimized to increase engagement of users or attract their attention (Soroka et. al, 2019; Robertson et. al, 2023a). On social media platforms today, this attention economy dictates all. Advertisers, public personalities, politicians, and social media platforms themselves attempt to attract users through their content, potentially increasing sensationalized, outrageous, and polarizing posts. 
-
+  </p>
+  
+<p>
 When Twitter was acquired by Elon Musk in October 2022, one of his primary stated objectives was to promote free speech. Within days of his takeover, Musk fired most of the company's content moderators and the 'trust and safety' team, and reinstated the accounts of numerous personalities previously banned for toxic speech (Yeung, 2023). Under Musk’s leadership, Twitter has transformed in other ways, from blatant changes such as their rebrand as ‘X’, to more opaque tweaks to the platform’s algorithms. Anecdotal observations from users and media members alike have noted a decline in Twitter’s 'quality', while advocacy organizations have decried the proliferation of hate speech under the new leadership. In a society as politically polarized as the United States, social media platforms can play a major role in aggravating negativity on both sides of the aisle (Boxell et. al, 2022). The two major US political parties, the Democrats and the Republicans, profess polar opposite opinions on a number of major political issues. Thus, it is reasonable to expect that the engagement and feeds of party members and partisans on Twitter are equally polarizing.
-
+  </p>
+  
+<p>
 What is less clearly understood is the impact of who one follows on one’s Twitter experience, in other words, what Twitter’s content algorithms choose to display as a result of those follows. Through our project, we intend to examine to what extent Twitter’s algorithm adapts two of its primary user feeds based on followers: the ‘For You’ feed, described by Twitter as a combination of 'accounts and Topics you follow as well as recommended posts,' and Twitter’s ‘Top’ search results, the default output of a search performed on Twitter (Twitter Help Center). Twitter has published little to no explanation to help its users understand this search results feed. Therefore, our goal is to quantify whether an account’s political affiliation (determined by the type of people they follow) has any impact on these two feeds. By creating Twitter accounts each following unique and highly partisan influencers, we compare the differing language utilized in the ‘For You’ feeds with the language employed in various search results. We hope to contribute to the understanding of the role played by Twitter in reinforcing political positions, if any. More precisely, we aim to provide an answer to two research questions:
-
+  </p>
+  
+<p>
 - RQ1: How does who you follow on Twitter influence what appears in your search results?
   - Regarding RQ1, we hypothesize that Twitter provides search results that are in some way influenced by political affiliations of the accounts followed by a user.
 - RQ2: Is there a political valence of search results on a political topic?
   - Regarding RQ2, we hypothesize that partisanship of search results will skew more conservatively.
+  </p>
 
 </p>
 
