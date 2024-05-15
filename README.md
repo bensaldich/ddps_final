@@ -84,7 +84,7 @@ Like many aforementioned studies, we also set our focus on the United States bec
 
 <p>
 
-<h2>Introduction</h2>
+<h3>Introduction</h3>
 
 ### Introduction ###
 
