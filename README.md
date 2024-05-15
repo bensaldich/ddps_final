@@ -83,7 +83,9 @@ Like many aforementioned studies, we also set our focus on the United States bec
 ## Data
 
 <p>
-  
+
+<h2>Introduction</h2>
+
 ### Introduction ###
 
   </p>
